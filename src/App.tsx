@@ -58,7 +58,7 @@ const App = () => {
 
     try {
       setAddingKey(true);
-      const response = await fetch('http://13.201.254.10:3000/videos/key', {
+      const response = await fetch('http://13.202.201.248:3000/videos/key', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ const App = () => {
 
       console.log('Fetching videos with params:', params.toString()); 
 
-      const response = await fetch(`http://13.201.254.10:3000/videos?${params.toString()}`, {
+      const response = await fetch(`http://13.202.201.248:3000/videos?${params.toString()}`, {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
